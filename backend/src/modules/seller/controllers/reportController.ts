@@ -82,7 +82,7 @@ const deleteSellerOrderItemRow = async (
     }
 
     const remainingItemIds = order.items.filter(
-        (itemId) => itemId.toString() !== orderItemId
+        (itemId: any) => itemId.toString() !== orderItemId
     );
 
     if (remainingItemIds.length === 0) {
