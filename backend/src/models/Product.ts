@@ -9,11 +9,11 @@ export interface IProduct extends Document {
   description?: string;
 
   // Flattened legacy properties accessed by controllers
-  stock?: number;
-  sku?: string;
-  price?: number;
-  discPrice?: number;
-  mainImage?: string;
+  stock: number;
+  sku: string;
+  price: number;
+  discPrice: number;
+  mainImage: string;
 
   // Categorization
   category: mongoose.Types.ObjectId;
